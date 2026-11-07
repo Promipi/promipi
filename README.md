@@ -1,5 +1,8 @@
 <div align="center">
-  <img src="profile/banner.png" width="640" alt="Hi, I'm Promipi — a backend developer"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile/hero-dark.svg"/>
+    <img src="profile/hero-light.svg" width="100%" alt="ASCII animation: a little agent meets a crab. hi, i'm promipi - backend developer"/>
+  </picture>
 
   <p>
     <a href="https://cesar.inpointer.com/"><img src="https://img.shields.io/badge/Portfolio-cesar.inpointer.com-0d1117?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
@@ -23,8 +26,8 @@ I also teach programming to kids and teenagers, and I like it as much as writing
 <p>
   <a href="https://skillicons.dev">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cs,dotnet,azure,aws,docker,kubernetes,githubactions,cloudflare,postgres,mongodb,redis,sqlite,python,fastapi,flask,ts,vue,cpp,bash,linux&perline=10&theme=dark"/>
-      <img src="https://skillicons.dev/icons?i=cs,dotnet,azure,aws,docker,kubernetes,githubactions,cloudflare,postgres,mongodb,redis,sqlite,python,fastapi,flask,ts,vue,cpp,bash,linux&perline=10&theme=light" alt="C#, .NET, Azure, AWS, Docker, Kubernetes, GitHub Actions, Cloudflare, PostgreSQL, MongoDB, Redis, SQLite, Python, FastAPI, Flask, TypeScript, Vue, C++, Bash, Linux"/>
+      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cs%2Cdotnet%2Cazure%2Caws%2Cdocker%2Ckubernetes%2Cgithubactions%2Ccloudflare%2Cpostgres%2Cmongodb%2Credis%2Csqlite%2Cpython%2Cfastapi%2Cflask%2Cts%2Cvue%2Ccpp%2Cbash%2Clinux&perline=10&theme=dark"/>
+      <img src="https://skillicons.dev/icons?i=cs%2Cdotnet%2Cazure%2Caws%2Cdocker%2Ckubernetes%2Cgithubactions%2Ccloudflare%2Cpostgres%2Cmongodb%2Credis%2Csqlite%2Cpython%2Cfastapi%2Cflask%2Cts%2Cvue%2Ccpp%2Cbash%2Clinux&perline=10&theme=light" alt="C#, .NET, Azure, AWS, Docker, Kubernetes, GitHub Actions, Cloudflare, PostgreSQL, MongoDB, Redis, SQLite, Python, FastAPI, Flask, TypeScript, Vue, C++, Bash, Linux"/>
     </picture>
   </a>
 </p>
