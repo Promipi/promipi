@@ -1,59 +1,84 @@
-<div id="header" align="center">
-  <img src="https://i.ibb.co/swx13ZY/banner.png" width="700" height="300"/>
-  
-  <div id="badges">
-  <a href="https://www.linkedin.com/in/cesar-alejandro-reina-morinigo-7a2113217/?locale=en_US">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-  <a href="mailto: promipisharp@gmail.com">
-   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://www.youtube.com/channel/UCbVXszCXVh6ZqNw-pNOqY9A">
-    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
-  </a>
+<div align="center">
+  <img src="profile/banner.png" width="640" alt="Hi, I'm Promipi — a backend developer"/>
+
+  <p>
+    <a href="https://cesar.inpointer.com/"><img src="https://img.shields.io/badge/Portfolio-cesar.inpointer.com-0d1117?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
+    <a href="https://www.linkedin.com/in/cesar-alejandro-reina-morinigo"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+    <a href="mailto:promipisharp@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+    <a href="https://www.youtube.com/channel/UCbVXszCXVh6ZqNw-pNOqY9A"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube"/></a>
+  </p>
 </div>
 
----
+I'm **Cesar Reina**, a backend developer from Asunción, Paraguay. I build APIs and cloud systems with **.NET** and **Azure**, and lately spend a lot of time on AI tooling: RAG pipelines, vector search and the Model Context Protocol.
 
-## 🧍About Me
+I also teach programming to kids and teenagers, and I like it as much as writing code.
 
-#### I am someone who is passionate about computer science, I like to teach and learn new things done!
-<p align="center">
-  
-</p> 
+- Backend Developer at **CLT S.A**, building APIs and internal enterprise applications
+- Programming Instructor at **Algorithmics**, teaching Python and preparing students for national olympiads
+- Studying at **Universidad Americana**
+- Previously at **Rugertek S.A**: a scraping platform on Azure Functions and Service Bus, SignalR, Docker Compose and Azure AI
 
-<h2 align="center">Technology Stack <img src="https://github.com/ritik307/ritik307/blob/main/images/laptop.gif" width="50"></h2>
+## Stack
 
-
-<p align="center">
-  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azure-devops&logoColor=white" />
-  <img src="https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
-  
-  <img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
+<p>
+  <a href="https://skillicons.dev">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cs,dotnet,azure,aws,docker,kubernetes,githubactions,cloudflare,postgres,mongodb,redis,sqlite,python,fastapi,flask,ts,vue,cpp,bash,linux&perline=10&theme=dark"/>
+      <img src="https://skillicons.dev/icons?i=cs,dotnet,azure,aws,docker,kubernetes,githubactions,cloudflare,postgres,mongodb,redis,sqlite,python,fastapi,flask,ts,vue,cpp,bash,linux&perline=10&theme=light" alt="C#, .NET, Azure, AWS, Docker, Kubernetes, GitHub Actions, Cloudflare, PostgreSQL, MongoDB, Redis, SQLite, Python, FastAPI, Flask, TypeScript, Vue, C++, Bash, Linux"/>
+    </picture>
+  </a>
 </p>
 
+Also: ASP.NET Core, gRPC, SignalR, SQL Server, Oracle, Qdrant, .NET MAUI, WinForms, Auth0, Sentry, Azure DevOps.
 
-<p align="center">
-  
+## Projects
 
+<p>
+  <a href="https://github.com/Promipi/patitas_felices">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="profile/pin-patitas_felices-dark.svg"/>
+      <img src="profile/pin-patitas_felices-light.svg" width="49%" alt="patitas_felices"/>
+    </picture>
+  </a>
+  <a href="https://github.com/Promipi/SignalR_ChatPractica">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="profile/pin-SignalR_ChatPractica-dark.svg"/>
+      <img src="profile/pin-SignalR_ChatPractica-light.svg" width="49%" alt="SignalR_ChatPractica"/>
+    </picture>
+  </a>
+  <a href="https://github.com/Promipi/Safari">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="profile/pin-Safari-dark.svg"/>
+      <img src="profile/pin-Safari-light.svg" width="49%" alt="Safari"/>
+    </picture>
+  </a>
+  <a href="https://github.com/Promipi/Factory">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="profile/pin-Factory-dark.svg"/>
+      <img src="profile/pin-Factory-light.svg" width="49%" alt="Factory"/>
+    </picture>
+  </a>
 </p>
 
-<h2 align="center">
-  My Stats <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50">
-</h2>
- 
-<br>
+## Activity
 
-<p align = "center">
-  <img  src = "https://github-readme-stats.vercel.app/api?username=promipi&show_icons=true&theme=dark&line_height=27">
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Promipi&background=0D1117&border=30363D&stroke=30363D&ring=2F81F7&fire=2F81F7&currStreakLabel=2F81F7&currStreakNum=E6EDF3&sideNums=E6EDF3&sideLabels=E6EDF3&dates=8B949E&border_radius=4.5"/>
+    <img src="https://streak-stats.demolab.com/?user=Promipi&background=FFFFFF&border=D0D7DE&stroke=D0D7DE&ring=0969DA&fire=0969DA&currStreakLabel=0969DA&currStreakNum=1F2328&sideNums=1F2328&sideLabels=1F2328&dates=656D76&border_radius=4.5" width="57%" alt="Contribution streak"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile/top-langs-dark.svg"/>
+    <img src="profile/top-langs-light.svg" width="41%" alt="Most used languages"/>
+  </picture>
 </p>
 
-<p align = "center">
- <img  src="https://github-readme-streak-stats.herokuapp.com/?user=promipi&show_icons=true&locale=en&layout=compact&theme=holi-theme&line_height=0" />
-</p> 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile/snake-dark.svg"/>
+  <img src="profile/snake-light.svg" width="100%" alt="Contribution graph eaten by a snake"/>
+</picture>
 
-<hr>
+## Certifications & achievements
+
+- [GitHub Actions](https://www.credly.com/earner/earned/badge/cd5feac0-7070-42ea-a7c5-313fd3635f51) and [GitHub Foundations](https://www.credly.com/earner/earned/badge/a4bab5e8-24f3-4e58-9b56-03dd38dc7f11) certifications (2024)
+- National medals in the Physics, Mathematics and Programming olympiads

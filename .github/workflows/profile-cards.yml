@@ -1,0 +1,115 @@
+name: Update profile cards
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily, 03:00 in Asunción
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths: [".github/workflows/profile-cards.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      # Official successor of github-readme-stats (the public vercel instance is paused).
+      # https://github.com/stats-organization/github-readme-stats-action
+      # AventOfCode2020 contains a committed virtualenv (~6 MB of Python) that skews the chart.
+      - name: Top languages (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide=html,css&exclude_repo=AventOfCode2020&theme=dark_github
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Top languages (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide=html,css&exclude_repo=AventOfCode2020&theme=light_github
+          path: profile/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Featured repositories
+      - name: Pin patitas_felices (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=patitas_felices&theme=dark_github_repocard&description_lines_count=2
+          path: profile/pin-patitas_felices-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pin patitas_felices (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=patitas_felices&theme=light_github_repocard&description_lines_count=2
+          path: profile/pin-patitas_felices-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pin SignalR_ChatPractica (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=SignalR_ChatPractica&theme=dark_github_repocard&description_lines_count=2
+          path: profile/pin-SignalR_ChatPractica-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pin SignalR_ChatPractica (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=SignalR_ChatPractica&theme=light_github_repocard&description_lines_count=2
+          path: profile/pin-SignalR_ChatPractica-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pin Safari (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Safari&theme=dark_github_repocard&description_lines_count=2
+          path: profile/pin-Safari-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pin Safari (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Safari&theme=light_github_repocard&description_lines_count=2
+          path: profile/pin-Safari-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pin Factory (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Factory&theme=dark_github_repocard&description_lines_count=2
+          path: profile/pin-Factory-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pin Factory (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Factory&theme=light_github_repocard&description_lines_count=2
+          path: profile/pin-Factory-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # https://github.com/Platane/snk
+      - name: Contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake-light.svg?palette=github-light
+            profile/snake-dark.svg?palette=github-dark
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "chore: update profile cards" || exit 0
+          git push
